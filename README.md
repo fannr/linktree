@@ -1,3 +1,3 @@
 ## Demo
 
-https://simple-system-auth.netlify.app/
+https://linktree-noerra.netlify.app/
