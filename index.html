@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noerra - Linktree</title>
+    <meta name="description" content="Linktree" />
+    <meta name="keywords" content="HTML, CSS, JS" />
+    <meta name="author" content="Fannr" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="img">
+          <img id="elementAnimated" src="profile.jpg" alt="Noerra" />
+        </div>
+        <h3 id="elementAnimated">NoerraCode.</h3>
+        <p id="elementAnimated">(Fatah Noer Arbain)</p>
+
+        <div class="link">
+          <a
+            id="elementAnimated"
+            href="https://www.linkedin.com/in/fatah-noer-1268b71b9/"
+            target="_blank"
+            >Linked In</a
+          >
+          <a
+            id="elementAnimated"
+            href="https://www.instagram.com/fatah_n12/"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            id="elementAnimated"
+            href="https://www.showwcase.com/noerra"
+            target="_blank"
+            >Showwcase</a
+          >
+          <a
+            id="elementAnimated"
+            href="https://github.com/fannr"
+            target="_blank"
+            >Github</a
+          >
+          <a
+            id="elementAnimated"
+            href="https://noerra-personal-portfolio.netlify.app/"
+            target="_blank"
+            >Personal Portfolio</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.body.parentElement.classList.add("animated");
+
+        const el = document.querySelectorAll("#elementAnimated");
+        for (const e of el.entries()) {
+          setTimeout(() => {
+            setTimeout(() => {
+              e[1].classList.add("show");
+            }, e[0] * 300);
+          }, 2200);
+        }
+      });
+    </script>
+  </body>
+</html>
